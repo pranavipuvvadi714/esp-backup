@@ -741,7 +741,7 @@ int main(int argc, char *argv[])
     iowrite32(dev_v0, CMD_REG, CMD_MASK_START);
     espdev = &espdevs[2];
     struct esp_device *router_tile_2 = &routerdevs[2]; // pranavi
-    write_sprint_cfg(router_tile_2, 15, 5, 1);    // duration=15, tokens=5, enable=1
+    //write_sprint_cfg(router_tile_2, 15, 5, 1);    // duration=15, tokens=5, enable=1
     printf("SPRINT_CFG Tile2: wrote 0x%08x, read back 0x%08x\n",
            encode_sprint_cfg(15, 5, 1), ioread32(router_tile_2, SPRINT_CFG_REG));
     verify_sprint_cfg(router_tile_2, "Tile2", 1, 5, 15);
@@ -756,7 +756,7 @@ int main(int argc, char *argv[])
     iowrite32(dev_f1, CMD_REG, CMD_MASK_START);
     espdev = &espdevs[3];
     struct esp_device *router_tile_3 = &routerdevs[3]; // pranavi
-    write_sprint_cfg(router_tile_3, 15, 5, 1);    // duration=15, tokens=5, enable=1
+    //write_sprint_cfg(router_tile_3, 15, 5, 1);    // duration=15, tokens=5, enable=1
     printf("SPRINT_CFG Tile3: wrote 0x%08x, read back 0x%08x\n",
            encode_sprint_cfg(15, 5, 1), ioread32(router_tile_3, SPRINT_CFG_REG));
     verify_sprint_cfg(router_tile_3, "Tile3", 1, 5, 15);
@@ -771,7 +771,7 @@ int main(int argc, char *argv[])
     iowrite32(dev_v1, CMD_REG, CMD_MASK_START);
     espdev = &espdevs[4];
     struct esp_device *router_tile_4 = &routerdevs[4]; // pranavi
-    write_sprint_cfg(router_tile_4, 15, 5, 1);    // duration=15, tokens=5, enable=1
+    //write_sprint_cfg(router_tile_4, 15, 5, 1);    // duration=15, tokens=5, enable=1
     printf("SPRINT_CFG Tile4: wrote 0x%08x, read back 0x%08x\n",
            encode_sprint_cfg(15, 5, 1), ioread32(router_tile_4, SPRINT_CFG_REG));
     verify_sprint_cfg(router_tile_4, "Tile4", 1, 5, 15);
@@ -786,7 +786,7 @@ int main(int argc, char *argv[])
     iowrite32(dev_f2, CMD_REG, CMD_MASK_START);
     espdev = &espdevs[5];
     struct esp_device *router_tile_5 = &routerdevs[5]; // pranavi
-    write_sprint_cfg(router_tile_5, 15, 5, 1);    // duration=15, tokens=5, enable=1
+    //write_sprint_cfg(router_tile_5, 15, 5, 1);    // duration=15, tokens=5, enable=1
     printf("SPRINT_CFG Tile5: wrote 0x%08x, read back 0x%08x\n",
            encode_sprint_cfg(15, 5, 1), ioread32(router_tile_5, SPRINT_CFG_REG));
     verify_sprint_cfg(router_tile_5, "Tile5", 1, 5, 15);
@@ -813,7 +813,7 @@ int main(int argc, char *argv[])
    // Start NVDLA normally
     espdev = &espdevs[0]; // NVDLA tile
     struct esp_device *router_tile_0 = &routerdevs[0]; // pranavi
-    write_sprint_cfg(router_tile_0, 15, 5, 1);    // duration=15, tokens=5, enable=1 //pranavi
+    //write_sprint_cfg(router_tile_0, 15, 5, 1);    // duration=15, tokens=5, enable=1 //pranavi
     printf("SPRINT_CFG Tile0: wrote 0x%08x, read back 0x%08x\n", 
            encode_sprint_cfg(15, 5, 1), ioread32(router_tile_0, SPRINT_CFG_REG));
     verify_sprint_cfg(router_tile_0, "Tile0", 1, 5, 15);  // enable=1, tokens=5, duration=15
